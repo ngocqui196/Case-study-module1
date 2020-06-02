@@ -51,7 +51,6 @@ function Stroke (startx,starty,overx,overy){
     };
     this.drawStroke = function () {
         let styleStroke = document.getElementById("myCanvas").getContext("2d");
-
     }
 }
 // Khởi tạo đối tượng trung tâm;

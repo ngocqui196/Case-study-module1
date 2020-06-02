@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b7a9434-3d19-4f78-8af9-46bf0935be48" name="Default Changelist" comment="" />
+    <list default="true" id="2b7a9434-3d19-4f78-8af9-46bf0935be48" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/js.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +18,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1chOorfbEhCWNqd3Q5HLQXIFN9T" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -28,7 +35,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Funny_circles" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -40,7 +47,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590977536412</updated>
-      <workItem from="1590977539310" duration="21808000" />
+      <workItem from="1590977539310" duration="22016000" />
+      <workItem from="1591060410449" duration="330000" />
+      <workItem from="1591060758499" duration="222000" />
+      <workItem from="1591061072067" duration="434000" />
+      <workItem from="1591061549216" duration="535000" />
     </task>
     <servers />
   </component>
@@ -52,9 +63,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1590997249741" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1590978602319">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1591060739199">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590978602319" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591060739199" />
   </component>
 </project>
