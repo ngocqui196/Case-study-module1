@@ -55,6 +55,21 @@ function Stroke (startx,starty,overx,overy){
         styleStroke.closePath();
     }
 }
+function DrawText (x,y,color,text,font){
+    this.x = x;
+    this.y = y;
+    this.color = color;
+    this.text = text;
+    this.font = font;
+    this.drawText = function () {
+        let drawtext = document.getElementById("myCanvas").getContext("2d");
+        drawtext.beginPath()
+        drawtext.fillStyle = this.color;
+        drawtext.font = this.font;
+        drawtext.fillText(this.text,this.x,this.y);
+        drawtext.closePath();
+    }
+}
 // Khởi tạo đối tượng trung tâm;
  let object = new Woman(100,100);
  object.drawControl();
@@ -115,8 +130,23 @@ document.addEventListener('keydown',function (event) {
        }
    }
 });
-
  //Chơi game và khởi tạo đối tượng mục tiêu:
+
+let num = 3;
+let x = 50;
+function playGame() {
+    let text1 = new DrawText(x,50,"blue",num,"35px sans-serif");
+    text1.drawText();
+    num--;
+    x+=50;
+    if (num >= 0 ){
+        setTimeout(playGame,1000);
+
+    }else{
+        setTimeout(controle(),1000);
+    }
+}
+
  function controle() {
     if (level !== 0){
         if (positionBTN === positionCircle){
