@@ -37,7 +37,6 @@ function Woman (width,height) {
         flyswatter.stroke();
         flyswatter.closePath();
     }
-
 }
 
 //Xây dựng lớp trỏ:
@@ -138,10 +137,9 @@ function playGame() {
     let text1 = new DrawText(x,50,"blue",num,"35px sans-serif");
     text1.drawText();
     num--;
-    x+=50;
     if (num >= 0 ){
         setTimeout(playGame,1000);
-
+        x+=50;
     }else{
         setTimeout(controle(),1000);
     }
