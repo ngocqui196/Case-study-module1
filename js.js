@@ -68,47 +68,59 @@ let stroke6 = new Stroke(250,250,400,250);
 let stroke7 = new Stroke(250,250,100,100);
 let stroke8 = new Stroke(250,250,250,100);
 let stroke9 = new Stroke(250,250,400,100);
+
 document.addEventListener('keydown',function (event) {
     if (positionBTN != null)
         return;
-    if  (event.keyCode === 97){
-        positionBTN = 1;
-        stroke1.drawStroke();
-    }
-    if  (event.keyCode === 98){
-        positionBTN = 2;
-        stroke2.drawStroke();
-    }
-    if  (event.keyCode === 99){
-        positionBTN = 3;
-        stroke3.drawStroke();
-    }
-    if  (event.keyCode === 100){
-        positionBTN = 4;
-        stroke4.drawStroke();
-    }
-    if  (event.keyCode === 102){
-        positionBTN = 6;
-        stroke6.drawStroke();
-    }
-    if  (event.keyCode === 103){
-        positionBTN = 7;
-        stroke7.drawStroke();
-    }
-    if  (event.keyCode === 104){
-        positionBTN = 8;
-        stroke8.drawStroke();
-    }
-    if  (event.keyCode === 105){
-        positionBTN = 9;
-        stroke9.drawStroke();
-    }
+    switch (event.keyCode) {
+       case 97 :{
+           positionBTN = 1;
+           stroke1.drawStroke();
+           break;
+       }
+       case 98 :{
+           positionBTN = 2;
+           stroke2.drawStroke();
+           break;
+       }
+       case 99 :{
+           positionBTN = 3;
+           stroke3.drawStroke();
+           break;
+       }
+       case 100 :{
+           positionBTN = 4;
+           stroke4.drawStroke();
+           break;
+       }
+       case 102 :{
+           positionBTN = 6;
+           stroke6.drawStroke();
+           break;
+       }
+       case 103 :{
+           positionBTN = 7;
+           stroke7.drawStroke();
+           break;
+       }
+       case 104 :{
+           positionBTN = 8;
+           stroke8.drawStroke();
+           break;
+       }
+       case 105 :{
+           positionBTN = 9;
+           stroke9.drawStroke();
+           break;
+       }
+   }
 });
 
  //Chơi game và khởi tạo đối tượng mục tiêu:
  function controle() {
     if (level !== 0){
         if (positionBTN === positionCircle){
+
             point++;
             console.log("dung")
         }else{
@@ -130,56 +142,67 @@ document.addEventListener('keydown',function (event) {
         setTimeout(controle,1000);
     }
 
-     positionBTN = null;
-     let ctx = document.getElementById("myCanvas").getContext("2d");
-     ctx.clearRect(0,0,500, 500);
-     let object = new Woman(100,100);
-     object.drawControl();
-     let fly1 = new Fly(100,400,20);
-     let fly2 = new Fly(250,400,20);
-     let fly3 = new Fly(400,400,20);
-     let fly4 = new Fly(100,250,20);
-     let fly6 = new Fly(400,250,20);
-     let fly7 = new Fly(100,100,20);
-     let fly8 = new Fly(250,100,20);
-     let fly9 = new Fly(400,100,20);
-     let k = Math.floor((Math.random() *8 )+1);
-     if (k ===1){
-         positionCircle = 1;
-         fly1.drawCircle();
-     }
-     if (k ===2){
-         positionCircle = 2;
-         fly2.drawCircle();
-     }
-     if (k ===3){
-         positionCircle = 3;
-         fly3.drawCircle();
-     }
-     if (k ===4){
-         positionCircle = 4;
-         fly4.drawCircle();
-     }
-     if (k ===5){
-         positionCircle = 6;
-         fly6.drawCircle();
-     }
-     if (k ===6){
-         positionCircle = 7;
-         fly7.drawCircle();
-     }
-     if (k ===7){
-         positionCircle = 8;
-         fly8.drawCircle();
-     }
-     if (k ===8){
-         positionCircle = 9;
-         fly9.drawCircle();
+    positionBTN = null;
+
+    let ctx = document.getElementById("myCanvas").getContext("2d");
+    ctx.clearRect(0,0,500, 500);
+
+    let object = new Woman(100,100);
+    object.drawControl();
+
+    let fly1 = new Fly(100,400,20);
+    let fly2 = new Fly(250,400,20);
+    let fly3 = new Fly(400,400,20);
+    let fly4 = new Fly(100,250,20);
+    let fly6 = new Fly(400,250,20);
+    let fly7 = new Fly(100,100,20);
+    let fly8 = new Fly(250,100,20);
+    let fly9 = new Fly(400,100,20);
+
+    switch (Math.floor((Math.random() *8 )+1)) {
+         case 1:{
+             positionCircle = 1;
+             fly1.drawCircle();
+             break;
+         }
+         case 2:{
+             positionCircle = 2;
+             fly2.drawCircle();
+             break;
+         }
+         case 3:{
+             positionCircle = 3;
+             fly3.drawCircle();
+             break;
+         }
+         case 4:{
+             positionCircle = 4;
+             fly4.drawCircle();
+             break;
+         }
+         case 5:{
+             positionCircle = 6;
+             fly6.drawCircle();
+             break;
+         }
+         case 6:{
+             positionCircle = 7;
+             fly7.drawCircle();
+             break;
+         }
+         case 7:{
+             positionCircle = 8;
+             fly8.drawCircle();
+             break;
+         }
+         case 8:{
+             positionCircle = 9;
+             fly9.drawCircle();
+             break;
+         }
      }
  }
-    function playAgain() {
-        controle();
-    }
+
 
 
 
